@@ -2,12 +2,9 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
 
   /*ou*/
-  place-content: center;
-  height: 100vh;
+  /* place-content: center; */
 }
 
 body {
@@ -19,4 +16,5 @@ h2 {
   border: 1px SOLIF #d7d7d7;
   padding: 20px;
   margin: 0;
+  flex: 1;
 }
