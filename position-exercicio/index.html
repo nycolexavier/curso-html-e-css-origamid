@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="header" >
+    <header class="header">
         <img src="./img/bikcraft.svg" alt="">
 
         <nav aria-label="primaria">
@@ -23,37 +23,40 @@
         </nav>
     </header>
 
+
     <main>
-        <div class="conteudo">
+        <article class="conteudo" aria-labelledby="label-introducao">
             <div class="introducao">
                 <span class="detalhe"></span>
-                <h1>Bicicletas Feitas a Mão</h1>
+                <h1 id="label-introducao">Bicicletas Feitas a Mão</h1>
                 <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios da marca.</p>
                 <a class="botao" href="/">Ver Mais</a>
             </div>
 
             <img src="img/bicicleta.jpg" alt="Bicicleta Bickraft Preta">
+        </article>
 
-            <h2 class="subtitulo">Vantagens Bickraft</h2>
+        <article class="conteudo" aria-labelledby="label-vantagens">
+            <h2 class="subtitulo" id="label-vantagens">Vantagens Bickraft</h2>
 
-            <div class="vantagens">
-                <div class="vantagens-item">
+            <ul class="vantagens">
+                <li class="vantagens-item">
                     <img src="img/eletrica.svg" alt="">
                     <h3>Motor elétrico</h3>
                     <p>Permite você viajar distâncias inimaginaveis com a sua bike.</p>
-                </div>
-                <div class="vantagens-item">
+                </li>
+                <li class="vantagens-item">
                     <img src="img/velocidade.svg" alt="">
                     <h3>40 km/h</h3>
                     <p>A mais rápido bicicleta elétrica disponível hoje no mercado.</p>
-                </div>
-                <div class="vantagens-item">
+                </li>
+                <li class="vantagens-item">
                     <img src="img/rastreador.svg" alt="">
                     <h3>Rastrador</h3>
                     <p>Rastreador e sistema anti-furto para a sua bike.</p>
-                </div>
-            </div>
-        </div>
+                </li>
+            </ul>
+        </article>
     </main>
 
 
