@@ -83,11 +83,13 @@ p {
   /* coloque tudo em letra maiscula */
   text-transform: uppercase;
 
+  /* solução para a borda não aumentar */
+  border: 2px solid transparent;
+
   transition: 0.5s;
 }
 
 .menu a:hover {
-  border: solid;
   border-color: #900;
 }
 
@@ -113,7 +115,8 @@ p {
   font-size: 2rem;
 }
 
-.detalhe {
+.introducao::before {
+  content: "";
   width: 60px;
   height: 4px;
   background: #e21;
@@ -125,7 +128,7 @@ p {
 .botao {
   background: var(--vermelho);
   color: #fff;
-  padding: 15px 30px;
+  padding: 1rem 2rem;
   border-radius: 4px;
   text-transform: uppercase;
 
@@ -158,12 +161,12 @@ p {
   padding: 20px;
 }
 
-.vantagens-item:hover {
-  border-left: 3px solid #900;
-}
-
 .vantagens-item:nth-child(odd) {
   background-color: #f7f7f7;
+}
+
+.vantagens-item:hover {
+  border-left: 4px solid #900;
 }
 
 .vantagens-item p {
