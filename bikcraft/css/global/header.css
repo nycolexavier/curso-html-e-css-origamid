@@ -25,11 +25,8 @@
   /* torna mais fácil acertar com o mouse/dedo */
   padding: 16px 0;
   display: inline-block;
-  font-size: 18px;
 
   position: relative;
-  font-family: "Poppins";
-  font-weight: 400;
 }
 
 .header-menu a:after {
