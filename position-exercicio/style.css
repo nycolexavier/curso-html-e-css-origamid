@@ -1,5 +1,5 @@
 :root {
-  --cor-pimaria: #ee2211;
+  --cor-primaria: #ee2211;
   --cor-primaria-escura: #900;
   --fundo-1: #f7f7f7;
   --fundo-2: #ffffff;
@@ -8,15 +8,13 @@
   --onda: url("img/onda-clara.svg");
 }
 
-
-
 @media (prefers-color-scheme: dark) {
   :root {
     --fundo-1: #111111;
     --fundo-2: #000000;
     --texto: #ffffff;
     --cor-subtitulo: rgba(255, 255, 255, 0.2);
-    --onda: url("img/onda-escura.svg")
+    --onda: url("img/onda-escura.svg");
   }
 }
 
@@ -77,15 +75,15 @@ p {
 
 .menu a {
   display: block;
-  background: var(--fundo-1);
-  padding: 15px 30px;
+  background: var(--fundo-2);
+  padding: 1rem 2rem;
   border-radius: 4px;
   color: var(--texto);
   /* coloque tudo em letra maiscula */
   text-transform: uppercase;
 
   /* solução para a borda não aumentar */
-  border: 2px solid transparent;
+  border: 2px solid var(--fundo-2);
 
   transition: 0.5s;
 }
@@ -101,7 +99,7 @@ p {
 }
 
 .introducao {
-  background: var(--fundo-1);
+  background: var(--fundo-2);
   padding: 40px;
   text-align: right;
   position: relative;
@@ -112,7 +110,7 @@ p {
   justify-items: end;
 }
 
-.introducao {
+.introducao h1 {
   font-size: 2rem;
 }
 
@@ -120,7 +118,7 @@ p {
   content: "";
   width: 60px;
   height: 4px;
-  background: var(--cor-pimaria);
+  background: var(--cor-primaria);
   position: absolute;
   top: 30px;
   right: -30px;
@@ -133,7 +131,7 @@ p {
 }
 
 .botao {
-  background: var(--cor-pimaria);
+  background: var(--cor-primaria);
   color: #ffffff;
   padding: 1rem 2rem;
   border-radius: 4px;
@@ -168,6 +166,7 @@ p {
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
   padding: 20px;
+  border-left: 4px solid transparent;
 }
 
 .vantagens-item:nth-child(odd) {
@@ -175,7 +174,7 @@ p {
 }
 
 .vantagens-item:hover {
-  border-left: 4px solid var(--cor-primaria-escura);
+  border-left: 4px solid var(--cor-primaria);
 }
 
 .vantagens-item p {
@@ -183,7 +182,7 @@ p {
 }
 
 .rodape {
-  background: #fff;
+  background: var(--fundo-2);
   width: 100%;
   text-align: center;
   padding: 40px;
